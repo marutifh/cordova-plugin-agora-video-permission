@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marutifh/cordova-plugin-agora-video-permission.git"
+    "url": "git+https://github.com/marutifh/cordova-plugin-agora-video-permissions.git"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -21,7 +21,7 @@
   "author": "Maruti Hulikatti",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marutifh/cordova-plugin-agora-video-permission/issues"
+    "url": "https://github.com/marutifh/cordova-plugin-agora-video-permissions/issues"
   },
-  "homepage": "https://github.com/marutifh/cordova-plugin-agora-video-permission#readme"
+  "homepage": "https://github.com/marutifh/cordova-plugin-agora-video-permissions#readme"
 }
