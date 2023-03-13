@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-agora-video-permission" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>AgoraJSPermission</name>
+    <js-module name="AgoraJSPermission" src="www/AgoraJSPermission.js">
+        <clobbers target="cordova.plugins.AgoraJSPermission" />
+    </js-module>
+    <platform name="android">
+         <config-file parent="/*" target="AndroidManifest.xml" >
+            <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.RECORD_AUDIO" />
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+            <!-- The Agora SDK requires Bluetooth permissions in case users are using Bluetooth devices. -->
+            <uses-permission android:name="android.permission.BLUETOOTH" />
+            <!-- For Android 12 and above devices, the following permission is also required. -->
+            <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+        </config-file>
+    </platform>
+    <platform name="ios">
+        <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+            <string>Teleconsultation uses the microphone to mute or unmute while on a call.</string>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+            <string>Captured photos can be used to update profile photos, contact support attachment or can be used while on video Teleconsultation.</string>
+        </config-file>
+    </platform>
+</plugin>

@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-agora-video-permission",
+  "version": "1.0.0",
+  "description": "cordova-plugin-agora-video-permission",
+  "cordova": {
+    "id": "cordova-plugin-agora-video-permission",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marutifh/cordova-plugin-agora-video-permission.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Maruti Hulikatti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marutifh/cordova-plugin-agora-video-permission/issues"
+  },
+  "homepage": "https://github.com/marutifh/cordova-plugin-agora-video-permission#readme"
+}
